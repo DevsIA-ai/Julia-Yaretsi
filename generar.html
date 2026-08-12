@@ -9,16 +9,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --gold:#d88fa8; --gold-dark:#a85770; --gold-light:#f3d9e2;
-    --cream:#fdf6f3; --dark:#2f1622; --text:#3a2230;
-    --text-muted:#8a6e78; --serif:'Cormorant Garamond',serif;
+    --gold:#c9a96e; --gold-dark:#9a7a4a; --gold-light:#e8d5b0;
+    --green:#8ca37a; --green-dark:#57734a; --green-light:#dce7ce;
+    --cream:#fbf8f1; --dark:#1e2a18; --text:#2b3324;
+    --text-muted:#6e7864; --serif:'Cormorant Garamond',serif;
     --script:'Great Vibes',cursive; --sans:'Montserrat',sans-serif;
   }
   *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
 
   body {
     font-family:var(--sans);
-    background:linear-gradient(155deg,#2f1622 0%,#5a2f42 55%,#160a10 100%);
+    background:linear-gradient(155deg,#1e2a18 0%,#4a6339 55%,#141d10 100%);
     min-height:100vh;
     display:flex; flex-direction:column; align-items:center; justify-content:center;
     padding:2rem 1rem;
@@ -71,20 +72,20 @@
     transition:border-color .25s;
   }
   .form-group input:focus, .form-group select:focus {
-    border-color:var(--gold);
+    border-color:var(--green);
   }
   .form-group input::placeholder { color:#bba990; }
 
   .btn-generar {
     width:100%; padding:.85rem;
-    background:var(--gold);
+    background:var(--green);
     border:none; border-radius:50px;
     color:#fff; font-family:var(--sans);
     font-size:.6rem; letter-spacing:.3em; text-transform:uppercase;
     cursor:pointer; margin-top:.4rem;
     transition:background .3s, transform .15s;
   }
-  .btn-generar:hover { background:var(--gold-dark); }
+  .btn-generar:hover { background:var(--green-dark); }
   .btn-generar:active { transform:scale(.98); }
 
   /* RESULTADO */
@@ -141,9 +142,9 @@
   .btn-copy:hover { background:rgba(201,169,110,.1); }
   .btn-copy.copied { background:rgba(201,169,110,.15); color:var(--gold); }
   .btn-open {
-    background:var(--gold); color:#fff;
+    background:var(--green); color:#fff;
   }
-  .btn-open:hover { background:var(--gold-dark); }
+  .btn-open:hover { background:var(--green-dark); }
   .btn-copy:active, .btn-open:active { transform:scale(.97); }
 
   .btn-otra {
